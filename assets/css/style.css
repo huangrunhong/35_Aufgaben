@@ -5,14 +5,15 @@
 }
 
 body > div {
-  margin: 0 auto;
+  margin: 2rem auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: Arial;
 }
 
 .image {
-  width: 60vw;
+  width: 50vw;
   align-self: center;
 }
 .button {
@@ -21,7 +22,7 @@ body > div {
   padding: 1rem 2rem;
   color: white;
   border: none;
-  margin-inline: 1rem;
+  margin: 0.5rem 1rem;
 }
 
 .p {
@@ -33,5 +34,5 @@ body > div {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  margin-block: 2.5rem;
+  margin-block: 3rem;
 }

@@ -62,7 +62,8 @@ let data = [
 ];
 
 const content = document.body.querySelector("#content");
-
+const headline = document.createElement("h1");
+headline.textContent = "Projekt Quiz";
 for (let singleData of data) {
   const div1 = document.createElement("div");
   const div2 = document.createElement("div");
@@ -91,3 +92,4 @@ for (let singleData of data) {
   div1.append(image, question, div2);
   content.appendChild(div1);
 }
+content.prepend(headline);
