@@ -102,4 +102,3 @@ for (let singleData of data) {
   content.appendChild(div1);
 }
 content.prepend(headline);
-function checkAnswer() {}
