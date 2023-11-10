@@ -39,5 +39,9 @@ body > div {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  margin-block: 3rem;
+  margin: 3rem auto;
+}
+.div2 {
+  margin: 0 auto;
+  align-self: center;
 }

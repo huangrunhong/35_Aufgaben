@@ -77,19 +77,29 @@ for (let singleData of data) {
     div2.append(button);
     button.classList.add("button");
     button.addEventListener("click", () => {
+      const choiceButtons = div2.querySelectorAll("button");
+      choiceButtons.forEach((elt) => {
+        elt.disabled = true;
+      });
       const answerCheck = singleData.answer.toString();
-      if (button.innerText == answerCheck) {
+      if (button.innerText === answerCheck) {
         button.style.backgroundColor = "green";
       } else {
         button.style.backgroundColor = "red";
+        const rightResult = document.createElement("h3");
+        rightResult.textContent = `${answerCheck} ist richtig!`;
+        rightResult.style.color = "red";
+        console.log(rightResult);
+        div1.appendChild(rightResult);
       }
     });
   }
   image.classList.add("image");
   question.classList.add("p");
   div1.classList.add("div1");
-
+  div2.classList.add("div2");
   div1.append(image, question, div2);
   content.appendChild(div1);
 }
 content.prepend(headline);
+function checkAnswer() {}
