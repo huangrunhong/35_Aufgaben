@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body > div {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image {
+  width: 60vw;
+  align-self: center;
+}
+.button {
+  width: 10rem;
+  background-color: black;
+  padding: 1rem 2rem;
+  color: white;
+  border: none;
+  margin-inline: 1rem;
+}
+
+.p {
+  text-align: center;
+  font-size: 1.5rem;
+}
+.div1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-block: 2.5rem;
+}
